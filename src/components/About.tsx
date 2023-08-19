@@ -18,7 +18,7 @@ const About:React.FC = () => {
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
         I'm a skilled software developer with experience in Typescript and Javascript and experties in frameworks like React.js, Node.js and Three.js.
-        I'm a quick learner, let's work together to bring your ideas to life.
+        Let's work together to bring your ideas to life.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap justify-center gap-10'>
