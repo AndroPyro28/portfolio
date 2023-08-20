@@ -24,7 +24,11 @@ import {
   tripguide,
   threejs,
   jollibee,
-  freelance
+  freelance,
+  nestjs,
+  nextjs,
+  expressjs,
+  reactQuery
 } from "../assets";
 
 export const navLinks = [
@@ -103,12 +107,20 @@ const technologies = [
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "NestJs",
+    icon: nestjs,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "nextjs",
+    icon: nextjs,
+  },
+  {
+    name: "expressjs",
+    icon: expressjs,
+  },
+  {
+    name: "react-query",
+    icon: reactQuery,
   },
 ];
 

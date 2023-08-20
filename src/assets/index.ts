@@ -17,11 +17,14 @@ import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
+import reactQuery from "./tech/react-query.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-
+import nestjs from './tech/nestjs.svg'
+import nextjs from './tech/nextjs.png'
+import expressjs from './tech/expressjs.png'
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
@@ -61,5 +64,9 @@ export {
   jobit,
   tripguide,
   jollibee,
-  freelance
+  freelance,
+  nestjs,
+  nextjs,
+  expressjs,
+  reactQuery
 };

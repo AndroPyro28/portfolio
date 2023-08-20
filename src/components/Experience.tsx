@@ -56,7 +56,7 @@ const ExperienceCard: React.FC<{
 const Experience = () => {
   return (
     <>
-      <motion.div variants={textVariant(1)}>
+      <motion.div variants={textVariant(0.5)}>
         <p className={styles.sectionSubText}>What i have done so far </p>
         <h2 className={styles.heroHeadText}>Work Experience.</h2>
       </motion.div>
