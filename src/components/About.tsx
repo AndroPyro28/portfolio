@@ -4,7 +4,7 @@ import {motion} from 'framer-motion';
 import {styles} from '../styles'
 import { services } from '../contants';
 import { fadeIn, textVariant } from '../utils/motion';
-import SectionWrapper from '../hoc/SectionWrapper';
+import { SectionWrapper } from '../hoc';
 
 const About:React.FC = () => {
   return (
