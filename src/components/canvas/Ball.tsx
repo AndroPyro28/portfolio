@@ -12,7 +12,6 @@ import CanvasLoader from "../Loader";
 const BallCanvas: React.FC<{ icon: string }> = ({ icon }) => {
   return (
     <Canvas
-      frameloop="demand"
       gl={{ preserveDrawingBuffer: true, }}
     >
       <Suspense fallback={<CanvasLoader />}>
