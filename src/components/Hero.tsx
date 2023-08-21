@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import cn from "../utils/twMerge";
-
+import { TypeAnimation } from 'react-type-animation';
 const Hero = () => {
 
   return (
@@ -22,8 +22,22 @@ const Hero = () => {
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             {" "}
-            I develop 3d visuals, user <br className={`sm:block hidden`} />{" "}
-            interfaces and web applications
+            
+            <TypeAnimation
+            className={`${styles.heroSubText} mt-2 text-white-100`}
+      sequence={[
+        // Same substring at the start will only be typed out once, initially
+        'I develop 3d visuals',
+        1000, // wait 1s before replacing "Mice" with "Hamsters"
+        'I develop user interfaces',
+        1000,
+        'I develop web applications',
+      ]}
+      wrapper="span"
+      speed={50}
+      // style={{ fontSize: '2em', display: 'inline-block' }}
+      repeat={Infinity}
+    />
           </p>
         </div>
       </div>
