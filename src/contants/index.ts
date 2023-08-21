@@ -63,25 +63,22 @@ const services = [
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
+  
   {
     name: "React JS",
     icon: reactjs,
+  },
+  {
+    name: "nextjs",
+    icon: nextjs,
+  },
+  {
+    name: "expressjs",
+    icon: expressjs,
+  },
+  {
+    name: "react-query",
+    icon: reactQuery,
   },
   {
     name: "Redux Toolkit",
@@ -116,17 +113,22 @@ const technologies = [
     icon: nestjs,
   },
   {
-    name: "nextjs",
-    icon: nextjs,
+    name: "HTML 5",
+    icon: html,
   },
   {
-    name: "expressjs",
-    icon: expressjs,
+    name: "CSS 3",
+    icon: css,
   },
   {
-    name: "react-query",
-    icon: reactQuery,
+    name: "JavaScript",
+    icon: javascript,
   },
+  {
+    name: "TypeScript",
+    icon: typescript,
+  },
+  
 ];
 
 const experiences = [
