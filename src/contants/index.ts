@@ -28,7 +28,8 @@ import {
   nestjs,
   nextjs,
   expressjs,
-  reactQuery
+  reactQuery,
+  mysql
 } from "../assets";
 
 export const navLinks = [
@@ -97,6 +98,10 @@ const technologies = [
   {
     name: "MongoDB",
     icon: mongodb,
+  },
+  {
+    name: "Mysql",
+    icon: mysql,
   },
   {
     name: "Three JS",

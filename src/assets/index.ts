@@ -15,6 +15,7 @@ import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
+import mysql from "./tech/mysql.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import reactQuery from "./tech/react-query.png";
@@ -29,7 +30,6 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -68,5 +68,6 @@ export {
   nestjs,
   nextjs,
   expressjs,
-  reactQuery
+  reactQuery,
+  mysql
 };
