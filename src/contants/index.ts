@@ -64,16 +64,41 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "git",
+    icon: git,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "NestJs",
+    icon: nestjs,
   },
+  {
+    name: "nextjs",
+    icon: nextjs,
+  },
+  {
+    name: "expressjs",
+    icon: expressjs,
+  },
+  {
+    name: "react-query",
+    icon: reactQuery,
+  },
+  
   {
     name: "JavaScript",
     icon: javascript,
+  },
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+  {
+    name: "Mysql",
+    icon: mysql,
+  },
+  {
+    name: "Three JS",
+    icon: threejs,
   },
   {
     name: "TypeScript",
@@ -95,38 +120,16 @@ const technologies = [
     name: "Node JS",
     icon: nodejs,
   },
+  
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "HTML 5",
+    icon: html,
   },
   {
-    name: "Mysql",
-    icon: mysql,
+    name: "CSS 3",
+    icon: css,
   },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "NestJs",
-    icon: nestjs,
-  },
-  {
-    name: "nextjs",
-    icon: nextjs,
-  },
-  {
-    name: "expressjs",
-    icon: expressjs,
-  },
-  {
-    name: "react-query",
-    icon: reactQuery,
-  },
+  
 ];
 
 const experiences = [
