@@ -23,9 +23,9 @@ const Navbar: React.FC = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-12 h-12 md:w-20 md:h-20 object-contain" />
+          <img src={logo} alt="logo" className="w-11 h-11 md:w-11 md:h-11  object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            Andro &nbsp; <span className="sm:block hidden"> | Web Developer</span>{" "}
+            Andro &nbsp; <span className="sm:block"> | Web Developer</span>{" "}
           </p>
         </Link>
         <ul className="list-non hidden sm:flex flex-row gap-10">

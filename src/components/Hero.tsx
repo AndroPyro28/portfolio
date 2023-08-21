@@ -26,12 +26,12 @@ const Hero = () => {
             <TypeAnimation
             className={`${styles.heroSubText} mt-2 text-white-100`}
       sequence={[
-        // Same substring at the start will only be typed out once, initially
         'I develop 3d visuals',
-        1000, // wait 1s before replacing "Mice" with "Hamsters"
+        1000,
         'I develop user interfaces',
         1000,
         'I develop web applications',
+        1000
       ]}
       wrapper="span"
       speed={50}
