@@ -53,7 +53,7 @@ const Tech = () => {
   const icons = Object.values(technologies).map((technology) => technology.icon);
   return (
     <>
-      <motion.div variants={textVariant(0.5)} className="">
+      <motion.div variants={textVariant(0.5)}>
         <p className={styles.sectionSubText}>
           Programming languages, libraries and frameworks i use{" "}
         </p>
