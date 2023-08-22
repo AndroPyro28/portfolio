@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -33,7 +33,11 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-
+import topnotch1 from './projects/topnotch1.png'
+import topnotch2 from './projects/topnotch2.png'
+import socialApp from './projects/social.png'
+import studyWithMe from './projects/study-with-me.png'
+import zsakers from './projects/zsakers.png'
 export {
   logo,
   backend,
@@ -69,5 +73,10 @@ export {
   nextjs,
   expressjs,
   reactQuery,
-  mysql
+  mysql,
+  topnotch1,
+topnotch2,
+socialApp,
+studyWithMe,
+zsakers
 };
