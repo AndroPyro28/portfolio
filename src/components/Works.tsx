@@ -14,16 +14,14 @@ const ProjectCard: React.FC<{project: typeof projects[number], index: number}> =
       scale:1,
       speed:450
     }}
-    className="bg-tertiary p-5 rounded-2xl sm:w-[300px] w-full"
+    className="bg-tertiary p-5 rounded-2xl sm:w-[300px] w-full max-w-[370px]"
     >
-      <div className="relaive w-full h-[230px]">
+      <div className="relative w-full h-[230px]">
         <img src={image} alt={name} 
         className="w-full h-full object-cover rounded-2xl"
         />
         <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-          <div onClick={() => {
-            window.open(source_code_link, '_blank')
-          }}
+          <div onClick={() => window.open(source_code_link, '_blank')}
           className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
           >
               <img src={github} alt="github" className="w-1/2 h-1/2 object-contain" />
@@ -47,7 +45,7 @@ const ProjectCard: React.FC<{project: typeof projects[number], index: number}> =
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant(0.5)} className="mt-[-80px]">
+      <motion.div variants={textVariant(0.5)} className="">
         <p className={styles.sectionSubText}>My work </p>
         <h2 className={styles.heroHeadText}>Projects.</h2>
       </motion.div>
@@ -61,7 +59,7 @@ const Works = () => {
           and manage projects effectively.
         </motion.p>
       </div>
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 flex flex-wrap gap-7 max-[1083px]:justify-center justify-start">
         {projects.map((project, index) => (
           <ProjectCard key={`project-card-${index}`} project={project} index={index}/>
         ))}

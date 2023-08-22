@@ -29,7 +29,12 @@ import {
   nextjs,
   expressjs,
   reactQuery,
-  mysql
+  mysql,
+  topnotch1,
+  topnotch2,
+  studyWithMe,
+  socialApp,
+  zsakers
 } from "../assets";
 
 export const navLinks = [
@@ -123,10 +128,10 @@ const technologies = [
     name: "expressjs",
     icon: expressjs,
   },
-  {
-    name: "react-query",
-    icon: reactQuery,
-  },
+  // {
+  //   name: "react-query",
+  //   icon: reactQuery,
+  // },
 ];
 
 const experiences = [
@@ -142,19 +147,6 @@ const experiences = [
       "the experience bolstered my communication skills significantly. Interacting with a diverse clientele, from families and students to professionals, helped me adapt my communication style to cater to the needs of different individuals. Active listening and clear communication became my allies, allowing me to ensure accurate orders and enhance the overall customer experience.",
     ],
   },
-  // {
-  //   title: "React Native Developer",
-  //   company_name: "Tesla",
-  //   icon: tesla,
-  //   iconBg: "#E6DEDD",
-  //   date: "Jan 2021 - Feb 2022",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
   {
     title: "Freelance Web Developer",
     company_name: "N/A",
@@ -164,22 +156,9 @@ const experiences = [
     points: [
       "Collaborating with cross-functional teams including developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-      "One of the most rewarding aspects of freelancing was the opportunity to collaborate with clients from diverse industries. Each project was a canvas where I could blend creativity and functionality, tailoring unique solutions to cater to their specific needs. From creating responsive websites that adapt seamlessly across devices to integrating e-commerce platforms that streamline business operations, I relished in the satisfaction of turning ideas into tangible digital realities.",
     ],
   },
-  // {
-  //   title: "Full stack Developer",
-  //   company_name: "Meta",
-  //   icon: meta,
-  //   iconBg: "#E6DEDD",
-  //   date: "Jan 2023 - Present",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
+  
 ];
 
 const testimonials = [
@@ -211,66 +190,87 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Top notch grooming",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A web-based live streaming app empowers you to broadcast and connect in real time. Interactive engagement and easy content sharing, all in one platform. Join events.",
     tags: [
       {
-        name: "react",
+        name: "ReactJs",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "ExpressJs",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Javascript",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: topnotch1,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Social Application",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A web-based social app for seamless connections. Share, post, and interact with friends through user-friendly interfaces.",
     tags: [
       {
-        name: "react",
+        name: "ReactJs",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Mysql",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "ExpressJs",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: socialApp,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Study With Me",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A web-based reviewer app Enhance. Access a comprehensive platform for reviewing diverse subjects. Practice quizzes, track progress, and achieve academic success conveniently.",
     tags: [
       {
-        name: "nextjs",
+        name: "NextJs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Mysql",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Create T3 App",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: studyWithMe,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Zsakers Cafe",
+    description:
+      "A web-based food ecommerce app. Browse diverse menus, order with ease, and enjoy doorstep delivery. A seamless platform to indulge in culinary delights from the comfort of your home.",
+    tags: [
+      {
+        name: "ReactJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "NestJs",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: zsakers,
     source_code_link: "https://github.com/",
   },
 ];
