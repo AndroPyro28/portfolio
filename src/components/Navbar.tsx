@@ -4,7 +4,9 @@ import { styles } from "../styles";
 import { navLinks } from "../contants";
 import { logo, menu, close } from "../assets";
 import cn from "../utils/twMerge";
-
+import { BsLinkedin } from "react-icons/bs";
+import { HiDownload } from "react-icons/hi";
+import myCv from "../assets/cv/menandro_eugenio_cv.pdf";
 const Navbar: React.FC = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
@@ -23,9 +25,14 @@ const Navbar: React.FC = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-11 h-11 md:w-11 md:h-11  object-contain" />
+          <img
+            src={logo}
+            alt="logo"
+            className="w-12 h-12 md:w-20 md:h-20 object-contain"
+          />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            Andro &nbsp; <span className="sm:block"> | Web Developer</span>{" "}
+            Andro &nbsp;{" "}
+            <span className="sm:block hidden"> | Web Developer</span>{" "}
           </p>
         </Link>
         <ul className="list-non hidden sm:flex flex-row gap-10">
@@ -43,6 +50,28 @@ const Navbar: React.FC = () => {
               </li>
             );
           })}
+          |
+          <li
+            className={cn(
+              ` font-poppins font-medium cursor-pointer text-[16px] text-secondary flex gap-2 `
+            )}
+          >
+            <a href={myCv} download={true} className="flex">
+              <HiDownload className="text-white w-8 h-6" />{" "}
+              <span className="text-white uppercase">My Cv</span>
+            </a>
+          </li>
+          <li
+            className={cn(
+              ` font-poppins font-medium cursor-pointer text-[16px] text-secondary flex gap-2 `
+            )}
+            onClick={() => {
+              window.open('https://www.linkedin.com/in/menandro-eugenio-jr-05275a205/', '_blank')
+            }}
+          >
+            <BsLinkedin className="text-white w-8 h-6" />{" "}
+            <span className="text-white">Linkedin</span>
+          </li>
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center ">
@@ -71,14 +100,36 @@ const Navbar: React.FC = () => {
                       active === link.title ? "text-white" : "text-secondary"
                     )}
                     onClick={() => {
-                      setActive(link.title)
-                      setToggle(prev => !prev)
+                      setActive(link.title);
+                      setToggle((prev) => !prev);
                     }}
                   >
                     <a href={`#${link.id}`}> {link.title} </a>
                   </li>
                 );
               })}
+              <div className="h-[1px] w-full bg-white"></div>
+              <li
+            className={cn(
+              ` font-poppins font-medium cursor-pointer text-[16px] text-secondary flex gap-2 `
+            )}
+          >
+            <a href={myCv} download={true} className="flex">
+              <HiDownload className="text-white w-8 h-6" />{" "}
+              <span className="text-white uppercase">My Cv</span>
+            </a>
+          </li>
+          <li
+            className={cn(
+              ` font-poppins font-medium cursor-pointer text-[16px] text-secondary flex gap-2 `
+            )}
+            onClick={() => {
+              window.open('https://www.linkedin.com/in/menandro-eugenio-jr-05275a205/', '_blank')
+            }}
+          >
+            <BsLinkedin className="text-white w-8 h-6" />{" "}
+            <span className="text-white">Linkedin</span>
+          </li>
             </ul>
           </div>
         </div>
