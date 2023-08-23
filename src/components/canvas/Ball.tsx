@@ -5,20 +5,18 @@ import {
   Float,
   OrbitControls,
   Preload,
-  useTexture,
 } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
 import * as THREE from 'three';
-import { rotate } from "maath/dist/declarations/src/buffer";
 
 const Ball:React.FC<{icon: string, position: any}> = ({ icon, position }) => {
   const decal = useMemo(() => new THREE.TextureLoader().load(icon), [icon]);
 
   return (
     <Float speed={2} rotationIntensity={0.8} floatIntensity={2}>
-      <ambientLight intensity={0.03} />
+      <ambientLight intensity={0.100} />
       <directionalLight position={[10, 5, 0]} />
       <mesh castShadow receiveShadow scale={1} position={position}>
         <icosahedronGeometry args={[1, 15]} />

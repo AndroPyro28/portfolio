@@ -2,46 +2,39 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import cn from "../utils/twMerge";
-import { TypeAnimation } from 'react-type-animation';
+import { TypeAnimation } from "react-type-animation";
 const Hero = () => {
-
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section className="relative w-full h-screen mx-auto mt-5">
       <div
-        className={cn(
-          `${styles.paddingX} absolute inset-0 top-[120px] max-w-xl mx-auto flex flex-row items-start gap-5`
-        )}
+        className={ cn(`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`)}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915eff]" />
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
+
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className={` text-[#915eff] `}>Andro</span>
+        <h1 className={`${styles.heroHeadText} text-white`}>
+            Hi, I'm <span className='text-[#915EFF]'>Andro</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            {" "}
-            
             <TypeAnimation
-            className={`${styles.heroSubText} mt-2 text-white-100`}
-      sequence={[
-        // Same substring at the start will only be typed out once, initially
-        'I develop 3d visuals',
-        1000, // wait 1s before replacing "Mice" with "Hamsters"
-        'I develop user interfaces',
-        1000,
-        'I develop web applications',
-      ]}
-      wrapper="span"
-      speed={50}
-      // style={{ fontSize: '2em', display: 'inline-block' }}
-      repeat={Infinity}
-    />
+              className={`${styles.heroSubText} mt-2 text-white-100`}
+              sequence={[
+                "I develop 3d visuals",
+                "I develop user interfaces",
+                1000,
+                "I develop web applications",
+              ]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+            />
           </p>
         </div>
       </div>
-      
+
       <ComputersCanvas />
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center ">
@@ -50,11 +43,12 @@ const Hero = () => {
             <motion.div
               animate={{
                 y: [0, 24, 0],
-                transition:{
+                transition: {
                   duration: 1.5,
                   repeat: Infinity,
                   repeatType: "loop",
-                }}}
+                },
+              }}
               className="w-3 h-3 rounded-full bg-secondary mb-1"
             />
           </div>
