@@ -23,9 +23,11 @@ const Hero = () => {
               className={`${styles.heroSubText} mt-2 text-white-100`}
               sequence={[
                 "I develop 3d visuals",
+                1000,
                 "I develop user interfaces",
                 1000,
                 "I develop web applications",
+                1000,
               ]}
               wrapper="span"
               speed={50}
