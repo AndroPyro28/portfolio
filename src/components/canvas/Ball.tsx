@@ -11,6 +11,7 @@ import {
 import CanvasLoader from "../Loader";
 
 import * as THREE from 'three';
+import { rotate } from "maath/dist/declarations/src/buffer";
 
 const Ball:React.FC<{icon: string, position: any}> = ({ icon, position }) => {
   const decal = useMemo(() => new THREE.TextureLoader().load(icon), [icon]);
@@ -18,7 +19,7 @@ const Ball:React.FC<{icon: string, position: any}> = ({ icon, position }) => {
   return (
     <Float speed={1.75} rotationIntensity={0.8} floatIntensity={2}>
       <ambientLight intensity={0.03} />
-      <directionalLight position={[10, 5, -5]} />
+      <directionalLight position={[10, 5, 0]} />
       <mesh castShadow receiveShadow scale={1} position={position}>
         <icosahedronGeometry args={[1, 10]} />
         <meshStandardMaterial
@@ -43,7 +44,7 @@ const BallCanvas:React.FC<{icons: string[]}>= ({ icons }) => {
     <Canvas frameloop='always'
     shadows
     dpr={[1, 1]}
-    camera={{ position: [0, -2, 5], fov: 65 }}
+    camera={{ position: [0, -2, 5], fov: 65,}}
     gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
