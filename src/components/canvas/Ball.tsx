@@ -21,7 +21,7 @@ const Ball:React.FC<{icon: string, position: any}> = ({ icon, position }) => {
       <ambientLight intensity={0.03} />
       <directionalLight position={[10, 5, 0]} />
       <mesh castShadow receiveShadow scale={1} position={position}>
-        <icosahedronGeometry args={[1, 10]} />
+        <icosahedronGeometry args={[1, 5]} />
         <meshStandardMaterial
           color='#fff8eb'
           flatShading
