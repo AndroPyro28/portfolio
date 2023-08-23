@@ -4,8 +4,6 @@ import { technologies } from "../contants";
 import { motion } from "framer-motion";
 import { textVariant } from "../utils/motion";
 import { styles } from "../styles";
-import { Canvas } from "@react-three/fiber";
-import { Html } from "@react-three/drei";
 
 const Tech = () => {
   return (
