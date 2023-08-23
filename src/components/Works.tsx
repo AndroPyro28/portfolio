@@ -51,7 +51,7 @@ const Works = () => {
         <h2 className={styles.heroHeadText}>Projects.</h2>
       </motion.div>
 
-      <div className="w-full flex">
+      <div className="w-full flex mt-3">
         <motion.p variants={fadeIn('', '', 0.1, 1)}>
         Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with

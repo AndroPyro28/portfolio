@@ -143,7 +143,7 @@ const experiences = [
     company_name: "Jollibee",
     icon: jollibee,
     iconBg: "red",
-    date: "July 2019 - july 2022",
+    date: "June 2019 - july 2022",
     points: [
       "During my time at Jollibee, I had the privilege of acquiring and refining a plethora of skills that are indispensable in any professional setting. Firstly, the fast-paced environment taught me the importance of time management and quick decision-making.",
       "The need to efficiently handle customer orders, ensure quality, and maintain a rapid pace taught me how to organize my tasks effectively and remain calm under pressure.",

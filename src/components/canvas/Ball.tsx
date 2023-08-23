@@ -27,6 +27,7 @@ const Ball:React.FC<{icon: string, position: any}> = ({ icon, position }) => {
           flatShading
           polygonOffset
           polygonOffsetFactor={-5}
+          
         />
         <Decal
           position={[0, 0, 1]}
@@ -54,7 +55,7 @@ const BallCanvas:React.FC<{icons: string[]}>= ({ icons }) => {
             const row = Math.floor(index / 3);
             const col = index % 5;
             return (
-              <Ball key={icon} icon={icon} position={[col * 3 - 4, row * 3 + -2, -9]} />
+              <Ball key={icon} icon={icon} position={[col * 3 - 4, row * 3 + -2,-9]} />
             );
           })}
         </group>
