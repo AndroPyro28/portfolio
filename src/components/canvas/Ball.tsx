@@ -17,7 +17,7 @@ const Ball:React.FC<{icon: string, position: any}> = ({ icon, position }) => {
   const decal = useMemo(() => new THREE.TextureLoader().load(icon), [icon]);
 
   return (
-    <Float speed={1.75} rotationIntensity={0.8} floatIntensity={2}>
+    <Float speed={2} rotationIntensity={0.8} floatIntensity={2}>
       <ambientLight intensity={0.03} />
       <directionalLight position={[10, 5, 0]} />
       <mesh castShadow receiveShadow scale={1} position={position}>
